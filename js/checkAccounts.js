@@ -211,13 +211,17 @@ async function registerNewAccount() {
     const password = document.getElementById('signUpInputPassword').value;
     const account = new Account(id, name, email, "", password);
     Join.accounts.push(account);
+    if (policyCheck){
+        await newAccountPost(account)
+    }
+    else{
+        
+    }
+    setTimeout(() => {
+        startPage2();
+    }, 2200);
     policyCheck = false;
-    await newAccountPost(account)
-    // setTimeout(() => {
-    //     startPage2();
-    // }, 2200);
-    // await saveAccounts();
-    // successCreateAccount();
+    successCreateAccount();
 }
 /**
  *  function for render a little information overlay to createAccount

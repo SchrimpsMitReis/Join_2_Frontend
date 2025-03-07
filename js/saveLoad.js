@@ -365,6 +365,8 @@ async function getSubtasks(id) {
 
 async function newAccountPost(account) {
     let accountAsJson = JSON.stringify(account)
+    console.log(accountAsJson);
+    
     return await fetch(accountsURL, {
         method: "POST",
         headers: {
