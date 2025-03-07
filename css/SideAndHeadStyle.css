@@ -1,0 +1,182 @@
+.sidebar {
+    background-color: #2A3647;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+    color: #CDCDCD;
+    font-family: sans-serif;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../IMG/LogoWhite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 125px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 0.9375rem;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 232px;
+    padding-left: 30%;
+    padding-right: -30%;
+}
+
+.navs:hover {
+    cursor: pointer;
+    background-color: #2A3D59;
+    transition: 0.1s ease-in-out;
+}
+
+.summary {
+    background-image: url("../IMG/Summary.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.board {
+    background-image: url("../IMG/Board.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.board h3 {
+    text-align: left;
+}
+
+.addTask {
+    background-image: url("../IMG/addTask.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.contacts {
+    background-image: url("../IMG/Contacts.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.header {
+    height: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 232px;
+    background-color: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.infoButton {
+    background-image: url("../IMG/help.png");
+    background-size: cover;
+    width: 20px;
+    height: 21px;
+}
+
+.infoButton:hover {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1, 1.1);
+}
+
+.userImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightblue);
+    font-weight: bold;
+    font-size: 30px;
+    width: 56px;
+    height: 56px;
+    border-radius: 30px;
+    border: 3px solid #2A3647;
+}
+
+.userImg:hover {
+    cursor: pointer;
+    background-color: var(--grey);
+    transition: 0.1s ease-in-out;
+}
+
+.accountIssues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 104px
+}
+
+.popupAccount {
+    position: absolute;
+    background-color: var(--dark-blue);
+    width: 150px;
+    height: 158px;
+    top: 6em;
+    right: 1em;
+    padding: 10px;
+    border-radius: 20px 0px 20px 20px;
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(200%);
+    transition: all 225ms ease-in-out;
+    z-index: 999;
+}
+
+.show-popupAccount {
+    transform: translateX(0);
+}
+
+.popupAccountBtn {
+    width: 144px;
+    background-color: #2A3647;
+    height: 46px;
+    color: #CDCDCD;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.popupAccountBtn:hover {
+    background-color: #2A3D59;
+    cursor: pointer;
+}

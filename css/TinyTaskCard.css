@@ -1,0 +1,119 @@
+.tinyTaskCard {
+    display: flex;
+    flex-direction: column;
+    max-width: 252px;
+    padding: 16px;
+    border-radius: 24px;
+    gap: 10px;
+    background-color: white;
+    justify-content: space-between;
+    cursor: move;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.107);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.tinyTaskCard:hover {
+    cursor: grab;
+    transform: rotate(3deg);
+}
+
+.tiny-task-category {
+    color: #FFFF;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    padding: 4px 16px;
+    border-radius: 10px;
+}
+
+.tiny-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tinyTaskCard h1 {
+    font-size: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    line-height: 16px;
+    text-align: left;
+}
+
+.tinyTaskCardContacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tinyTaskCardDescription {
+    color: #A8A8A8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subtasks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px !important;
+}
+
+.tiny-task-label {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.subtask-style {
+    width: 94% !important;
+}
+
+.progressContainer {
+    width: 128px;
+    height: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #4589FF;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.tiny-task-label p {
+    font-size: 12px !important;
+}
+
+.prioIcon {
+    width: 17px;
+}
+
+.contactsAndPrio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contactsAndPrio .accountTag {
+    width: 33px;
+    font-size: 12px;
+    margin-left: -10px;
+}
+
+.ok-button-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 18px;
+    margin-bottom: 25px;
+}

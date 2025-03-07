@@ -1,0 +1,260 @@
+@media (max-width: 1520px) {
+    .frame-136 {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1470px) {
+    .frame-192 {
+        justify-content: stretch;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .frame-136 {
+        margin-left: 62px;
+    }
+
+    .frame-192 {
+        margin-left: 62px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .frame-192 {
+        display: inline-table;
+        padding-top: 0;
+    }
+
+    .frame-123 {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-board-task-footer {
+        gap: 80%;
+    }
+
+    .res-content-board {
+        padding: 40px 90px 90px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .frame-123 {
+        flex-direction: column;
+        align-items: start;
+        gap: 18px;
+    }
+
+    .button-add-task {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .style-closebutton-intask {
+        margin: 0;
+    }
+
+    .res-content-board {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .frame-192 h2 {
+        text-align: start;
+    }
+}
+
+@media (min-width: 741px) {
+    .res-button-add-task {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .taskCard {
+        max-width: 100%;
+    }
+
+    .frame-192 {
+        padding-right: 0;
+        margin-left: 20px;
+    }
+
+    .res-content-board {
+        padding: 0;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .res-button-add-task {
+        cursor: pointer;
+        border-style: none;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .res-button-add-task:hover {
+        background-color: var(--dark-blue);
+        box-shadow: none;
+    }
+
+    .res-button-add-task:active {
+        background-color: var(--lightblue);
+    }
+
+    .frame-123 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .frame-136 {
+        margin-left: 20px;
+    }
+
+    .lanes {
+        width: 100%;
+    }
+
+    .board-task-input input {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 671px) {
+    .mobile-res-button-add-task {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .taskCard {
+        padding: 28px 20px 28px 20px;
+    }
+
+    .drag-area {
+        overflow-x: auto;
+    }
+
+    .taskCard h1 {
+        font-size: 35px;
+    }
+
+    .mobile-res-board {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tinyTaskCard {
+        width: 252px;
+        max-height: none;
+    }
+
+    .frame-192 {
+        margin-bottom: 2em;
+    }
+
+    .frame-192 h2 {
+        margin-block-start: .2em;
+        margin-block-end: .2em;
+        font-size: 50px;
+    }
+
+    .res-button-add-task {
+        display: none;
+    }
+
+    .mobile-res-button-add-task {
+        cursor: pointer;
+        border-style: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-res-button-add-task:hover {
+        background-color: var(--dark-blue);
+        box-shadow: none;
+    }
+
+    .mobile-res-button-add-task:active {
+        background-color: var(--lightblue);
+    }
+
+    .frame-136 {
+        justify-content: space-between;
+    }
+
+    .board-actionbar {
+        width: 100%;
+    }
+
+    .frame-123 input {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .canban-style {
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .empty-tasks {
+        width: 90%;
+    }
+}
+
+@media (max-width: 414px) {
+    .mobile-res-board {
+        padding-right: 12px;
+    }
+
+    .lanes {
+        width: 96%;
+    }
+
+    .taskCard {
+        padding: 18px 10px 18px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .frame-192 {
+        margin-left: 0;
+        margin: 5px;
+    }
+
+    .frame-136 {
+        margin-left: 0;
+        margin: 5px;
+    }
+
+    .tinyTaskCard {
+        max-height: none;
+        max-width: none;
+        width: 215px;
+        padding: 8px;
+        gap: 5px;
+    }
+}
+
+@media (max-height: 896px) {
+    .add-task-card {
+        height: 100%;
+    }
+}

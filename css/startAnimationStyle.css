@@ -1,0 +1,108 @@
+.logo-animation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-blue);
+    animation: fadeIn 1s ease-in-out;
+    z-index: 10;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.logoAnimationImg {
+    background-image: url("../IMG/Capa 1.png");
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 110px;
+    background-size: 90px, 100px;
+    transform: translate(0px, 0px);
+    animation: logoAnimation 1s ease-in-out;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
+.logoAnimationImg2 {
+    background-image: url("../IMG/Capa 1.png");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 124px;
+    background-size: cover;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
+.welcome-animation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    animation: welcomeFadeIn 1.5s ease-out;
+    z-index: 10;
+}
+
+/* Animation */
+
+@keyframes logoAnimation {
+    from {
+        top: calc(100vh - 50%);
+        left: calc(100vw - 50%);
+        scale: 200%;
+    }
+    to {
+        top: 45px;
+        left: 45px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes welcomeFadeIn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    @keyframes logoAnimation {
+        from {
+            top: calc(100vh - 50%);
+            left: calc(100vw - 50%);
+            scale: 200%;
+        }
+        to {
+            top: 25px;
+            left: 25px;
+        }
+    }
+}

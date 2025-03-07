@@ -1,0 +1,292 @@
+.w-29 {
+    width: 100% !important;
+}
+
+.category-color {
+    display: flex;
+    padding: 4px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.taskCard {
+    background-color: white;
+    width: 525px;
+    height: 85%;
+    padding: 48px 40px 48px 40px;
+    border-radius: 30px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.taskCardHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.taskCard h1 {
+    font-size: 53px;
+    text-align: left;
+    margin: 0;
+}
+
+.taskCard p {
+    font-size: 20px;
+    width: 100%;
+    text-align: start;
+    margin: 0;
+}
+
+.taskCard-date-prio {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0 12px 0;
+    gap: 12px;
+}
+
+.taskCardAttribute {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.taskCardAttribute p {
+    width: 6em;
+    height: 24px;
+}
+
+.taskCardAttribute img {
+    margin-left: -1.2em;
+}
+
+.taskCardAssignment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+#taskCardAssinedList {
+    padding-left: 18px;
+}
+
+.deleteBtn {
+    background-image: url("../IMG/deleteBtn.png");
+    width: 83px;
+    height: 24px;
+    margin: 1px;
+}
+
+.deleteBtn:hover {
+    background-image: url("../IMG/deleteBtnHover.png");
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.taskCardFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.editBtn {
+    background-image: url("../IMG/editBtn.png");
+    width: 63px;
+    height: 24px;
+    margin: 1px;
+}
+
+.editBtn:hover {
+    background-image: url("../IMG/editBtnHover.png");
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.style-task {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.styleEditTask {
+    overflow-y: scroll;
+}
+
+.editTaskCard {
+    width: 100%;
+    height: 100%;
+}
+
+.editTask {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.editTask label {
+    font-size: 20px;
+}
+
+.accountTag {
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white
+}
+
+.tinyAccountTaskCard {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-size: 19px;
+}
+
+.subtask-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 18px;
+    height: 32px;
+}
+
+.subtask-list img {
+    cursor: pointer;
+}
+
+.style-subtask-checkbox {
+    width: 100%;
+    height: 100%;
+}
+
+.subtask-text {
+    text-align: center;
+}
+
+.style-checkbox-displayflex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.check-box-task {
+    padding-top: 5px;
+    width: 24px;
+    height: 30px;
+}
+
+.checkbox-img-taskCard {
+    object-fit: cover;
+}
+
+.checkbox-img-taskCard-check {
+    margin-top: 4px;
+    margin-left: 3px;
+    object-fit: cover;
+}
+
+.subtask-text {
+    margin-left: 3px;
+}
+
+#taskCardETitle {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+#taskCardEDesc {
+    display: flex;
+    height: 120px;
+    padding: 16px 14px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+#taskCardEDate {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.assignContactsCard {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    color: #000;
+}
+
+.assignContactsCard input {
+    background-color: white;
+    border: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.assignContactsCard img:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}

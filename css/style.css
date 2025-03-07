@@ -1,0 +1,452 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --general-button-inactive: rgba(42, 54, 71, 1);
+    --general-button-hover: rgba(41, 171, 226, 1);
+    --general-button-active: rgba(9, 25, 49, 1);
+    --lightgrey: rgba(246, 247, 248, 1);
+    --placeholder: rgba(209, 209, 209, 1);
+    --lightblue: rgba(41, 171, 226, 1);
+    --white-btn-active: rgba(9, 25, 49, 1);
+    --text-button: rgba(168, 168, 168, 1);
+    --link-color: #29abe2;
+    --dark-blue: rgba(42, 54, 71, 1);
+    --grey: rgba(205, 205, 205, 1);
+}
+
+* {
+    font-family: inter, sans-serif !important;
+}
+
+.draggable {
+    transition: transform 0.2s;
+}
+
+.draggable:active {
+    transform: scale(1.05);
+    z-index: 1000;
+}
+
+.pl-arrow {
+    position: absolute;
+    right: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--lightgrey);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.color-userStory {
+    background-color: #0038FF;
+}
+
+.color-technical {
+    background-color: #1FD7C1;
+}
+
+.frame-14:focus-within {
+    border: 1px solid var(--lightblue);
+}
+
+.border-success {
+    /* border-color: var(--lightblue); */
+    border: 1px solid var(--lightblue);
+}
+
+.input-error {
+    border: 1px solid #FF001F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--lightgrey);
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.btn-underlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(209, 209, 209, 1);
+    border-radius: 10px;
+    padding: 12px 21px 12px 21px;
+}
+
+.btn-underlay:focus-within {
+    border: 1px solid var(--lightblue);
+}
+
+.frame-157 {
+    border: none;
+    width: 422px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.frame-157:hover {
+    cursor: pointer;
+}
+
+.frame-157:focus {
+    outline: none;
+}
+
+.frame-157::placeholder {
+    padding: 4px;
+    color: var(--placeholder);
+}
+
+.btn-dark-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 180px;
+    height: 48px;
+    padding: 15px 16px 15px 16px;
+    border-radius: 8px;
+    gap: 10px;
+    background: var(--general-button-inactive);
+    color: #ffffff;
+    letter-spacing: 0em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.btn-dark-blue:hover {
+    cursor: pointer;
+    background-color: var(--general-button-hover);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease-in-out;
+}
+
+.btn-dark-blue:active {
+    background-color: var(--general-button-active);
+}
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color: black;
+    max-width: 177px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid black;
+    gap: 10px;
+    letter-spacing: 0em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.btn-white:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid var(--lightblue);
+    color: var(--lightblue);
+    transition: 0.1s ease-in-out;
+}
+
+.btn-white:hover img {
+    filter: brightness(3.5);
+    transition: 0.1s ease-in-out;
+}
+
+.btn-white:active {
+    border: 1px solid var(--white-btn-active);
+    color: var(--white-btn-active);
+}
+
+.loginButtons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.text-lightblue {
+    color: var(--lightblue);
+}
+
+h1 {
+    margin: 0;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.check-box {
+    cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    left: unset;
+    content: url('../IMG/check_empty.svg');
+    appearance: none;
+}
+
+.checkbox:hover {
+    content: url('../IMG/checkbox_hover.svg');
+}
+
+.checkbox:checked {
+    content: url('../IMG/checkbox_check.svg');
+}
+
+.checkbox:checked:hover {
+    content: url('../IMG/checkbox_check_hover.svg');
+}
+
+.checkbox-hook {
+    padding-bottom: 1px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex-mid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.font-size-normal {
+    font-weight: 400;
+}
+
+.bg-color-white {
+    background-color: white !important;
+}
+
+.text-button {
+    min-width: 130px;
+    background-color: var(--lightgrey);
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-button);
+    font-weight: 400;
+}
+
+.text-button:hover {
+    background-color: var(--lightgrey);
+    border: none;
+    box-shadow: none;
+    color: var(--lightblue, #29ABE2);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 120%;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+.mg-none {
+    margin: 0 !important;
+}
+
+.mb-32 {
+    margin-bottom: 32px !important;
+}
+
+.mb-72 {
+    margin-bottom: 72px !important;
+}
+
+.btn-create,
+.btn-create-contacts {
+    width: 214px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    min-width: 300px;
+    bottom: 40px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#content {
+    height: 100%;
+    margin-left: 232px;
+    margin-top: 98px;
+}
+
+.close-button {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.style-closebutton {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.style-closebutton:hover {
+    cursor: pointer;
+    background: var(--placeholder);
+    transition: 0.1s ease-in-out;
+}
+
+.overlay-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 225ms ease-in-out;
+}
+
+.show-overlay {
+    transform: translateX(0);
+}
+
+.overlay-success {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 68px;
+    justify-content: center;
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 225ms ease-in-out;
+}
+
+.show-success-overlay {
+    transform: translateX(0);
+}
+
+.left-arrow-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--lightgrey);
+    width: 50px;
+    height: 50px;
+}
+
+.left-arrow-btn:active {
+    background-color: var(--grey);
+}
+
+
+/* ====================================================== <scrollbalken> =============================================================== */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--general-button-inactive);
+    border-radius: 10px;
+    height: 60px;
+}
+
+.dragging {
+    opacity: 0.7; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.05); 
+    border: 2px solid #4A90E2; 
+    z-index: 1000; 
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.7;
+}
+/* ====================================================== </scrollbalken> =============================================================== */
+
+.respon-footer,
+.respon-header {
+    display: none;
+}
+
+.link-email:hover {
+    cursor: pointer;
+    color: var(--lightblue);
+}
+
+@media (max-width: 520px) {
+    .btn-dark-blue,
+    .btn-white {
+        font-size: 12px;
+        padding: 2px;
+    }
+    .btn-create-contacts {
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 414px) {
+     ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .accountIssues {
+        width: 78px;
+    }
+}

@@ -1,0 +1,201 @@
+/* Für Large Screen im Querformat */
+
+@media only screen and (min-width: 1030px) and (max-width: 1032px) and (orientation: landscape) {
+    .board-task-middle {
+        height: 42vh;
+    }
+}
+
+
+/* Für Ipad Mini im Querformat */
+
+@media only screen and (min-width: 1023px) and (max-width: 1024px) and (orientation: landscape) {
+    .board-task-middle {
+        height: 45vh;
+    }
+}
+
+
+/* Für Nexus 7 im Querformat */
+
+@media only screen and (min-width: 958px) and (max-width: 962px) and (orientation: landscape) {
+    .board-task-middle {
+        height: 30vh;
+    }
+    .content-headline-add-task h3 {
+        font-size: 40px;
+    }
+}
+
+
+/* Für Mobile im Querformat */
+
+@media only screen and (min-width: 890px) and (max-width: 896px) and (orientation: landscape) {
+    #content {
+        margin-left: 0;
+    }
+    .sidebar,
+    .header {
+        display: none;
+    }
+    .respon-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 96px;
+        padding-left: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFF;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    .respon-overlay {
+        margin-left: 0;
+    }
+    .respon-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--dark-blue);
+        color: white;
+        z-index: 1;
+    }
+    .respon-logo {
+        width: 46px;
+        height: 56px;
+        object-fit: cover;
+    }
+    .nav-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .respon-footer-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .respon-footer-buttons:hover {
+        cursor: pointer;
+        background-color: var(--general-button-active);
+    }
+    .board-task-middle {
+        height: 25vh;
+    }
+    .accountIssues {
+        padding-right: 10px;
+    }
+    .content-headline-add-task h3 {
+        font-size: 20px !important;
+    }
+    .content-add-task {
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+    .content-headline-add-task h3 {
+        font-size: 40px;
+    }
+    .checkbox-container {
+        width: 97%;
+    }
+    .input-title label {
+        font-size: 16px;
+    }
+    .input-description p {
+        font-size: 16px;
+    }
+    .input-description textarea {
+        font-size: 16px;
+    }
+    .accountTag {
+        width: 32px;
+        height: 32px;
+    }
+    .accountName {
+        font-size: 16px;
+    }
+    .assigned-style {
+        font-size: 16px;
+    }
+    .assign-container input {
+        font-size: 16px;
+    }
+    .add-new-contact {
+        width: 50%;
+        font-size: 16px;
+    }
+    .input-date label {
+        font-size: 16px;
+    }
+    .board-input-date input[type="date"] {
+        font-size: 16px;
+    }
+    .prio-category p {
+        font-size: 16px;
+    }
+    .category-button {
+        padding: 12px 8px;
+    }
+    .category-button p {
+        font-size: 12px;
+    }
+    .content-headline-add-task {
+        margin-left: 5px;
+    }
+    .category-sub label {
+        font-size: 16px;
+    }
+    .select-task-category-container {
+        width: 87%;
+    }
+    .select-task-category-container span {
+        font-size: 16px;
+    }
+    .board-task-input p {
+        font-size: 16px;
+    }
+    .field-required-text {
+        font-size: 12px;
+    }
+    .btn-dark-blue {
+        font-size: 12px;
+        padding: 2px;
+    }
+    .create-subtask ul {
+        width: 92%;
+    }
+    .fix-container {
+        width: 98%;
+    }
+    .fix-container input {
+        font-size: 16px;
+    }
+    .content-headline-add-task {
+        margin-left: 10px;
+    }
+    .left-side {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .right-side {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .field-required-text {
+        margin-left: 10px;
+    }
+    .addTask-button {
+        margin-right: 10px;
+    }
+}

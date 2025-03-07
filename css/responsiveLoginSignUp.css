@@ -1,0 +1,102 @@
+@media (max-width: 900px) {
+    .logoAnimationImg,
+    .logoAnimationImg2 {
+        width: 50px;
+        height: 70px;
+        background-size: 50px, 70px;
+        top: 25px;
+        left: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .frame-156 {
+        display: none;
+    }
+    .frame-156-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        width: 279px;
+        height: 49px;
+    }
+    .login-headline {
+        font-size: 42px;
+        line-height: 30px;
+    }
+    .login-underline {
+        width: 100px;
+    }
+    .respon-frame-153 {
+        padding: 3rem 7.1875rem;
+        width: 32%;
+        gap: 0;
+    }
+    .frame-14 {
+        width: 290px;
+        height: 16px;
+    }
+    .input-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .frame-157 {
+        font-size: 14px !important;
+    }
+    .remember-me {
+        padding: 0;
+        gap: 0;
+    }
+    .checkbox-text {
+        font-size: 12px;
+    }
+    .loginButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .login-btn {
+        width: 177px !important;
+    }
+    .backBtn {
+        top: 1rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 388px) {
+    .frame-14 {
+        width: 220px;
+        height: 16px;
+        padding: 7px 16px;
+    }
+    .respon-frame-153 {
+        width: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    .login-footer {
+        bottom: 5px;
+        gap: 5px;
+    }
+
+    .logoAnimationImg2 {
+        height: 40px;
+        width: 30px;
+        background-size: 30px, 40px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .login-footer {
+        bottom: 5px;
+        gap: 5px;
+    }
+
+    .login-signUp-interface {
+        margin-top: 3% !important;
+    }
+}

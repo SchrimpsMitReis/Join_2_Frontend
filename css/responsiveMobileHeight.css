@@ -1,0 +1,120 @@
+@media (max-height: 667px) {
+    .board-task-middle {
+        height: 45vh;
+    }
+    .chipsArea {
+        row-gap: 12px;
+    }
+}
+
+@media (max-height: 786px) {
+    .board-task-middle {
+        height: 45vh;
+    }
+}
+
+@media (max-height: 896px) {
+    .summery {
+        padding-top: 50px;
+    }
+    .contentArea {
+        margin-top: 30px;
+    }
+}
+
+@media (max-height: 846px) {
+    .board-task-middle {
+        height: 50vh;
+    }
+}
+
+@media (max-height: 812px) {
+    .board-task-middle {
+        height: 50vh;
+    }
+    .summery {
+        padding-top: 0;
+    }
+    .contentArea {
+        margin-top: 0;
+    }
+    .btn-white,
+    .btn-dark-blue,
+    .login-btn {
+        height: 36px;
+    }
+    .frame-159 {
+        height: 68px;
+    }
+    .login-headline {
+        font-size: 32px;
+        line-height: 20px;
+    }
+    .login-container {
+        gap: 15px;
+    }
+    .loginButtons {
+        gap: 12px;
+    }
+}
+
+@media (max-height: 736px) {
+    .board-task-middle {
+        height: 42vh;
+    }
+}
+
+@media (max-height: 786px) and (min-height: 785px) {
+    .board-task-middle {
+        height: 45vh;
+    }
+}
+
+@media (max-height: 660px) {
+    .login-signUp-interface {
+        align-items: flex-start;
+        margin-top: 30%;
+    }
+    .login-footer {
+        gap: 0px;
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+@media (max-height: 568px) and (min-height: 560px) {
+    .board-task-middle {
+        height: 30vh;
+    }
+}
+
+
+/* **************************CONTACTS ***********************************/
+
+@media (max-height: 730px) {
+    .res-left-arrow {
+        margin: 0;
+        right: 16px;
+        top: 8px;
+    }
+    .res-contacts-headline {
+        margin: 8px 0 32px 0;
+    }
+    .mail-headline {
+        margin-top: 24px;
+    }
+    .loginButtons {
+        margin-top: 16px;
+    }
+    .logo-by-details {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 600px) {
+    .mail-headline {
+        margin-top: 14px;
+    }
+}

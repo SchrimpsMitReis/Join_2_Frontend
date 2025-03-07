@@ -1,0 +1,65 @@
+.createTaskWindow{
+    background-color: #F6F7F8;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.createTaskWindow h1{
+    font-family: sans-serif;
+    font-size: 61px;
+    font-weight: 700;
+}
+.taskWindowColumn{
+    width: 70%;
+}
+.taskWindowForm{
+    display: flex;
+}
+.inputParameter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 40%;
+    justify-content: space-between;
+}
+.createTaskWindow label{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.createTaskWindow input{
+    border: 2px solid #D1D1D1;
+    border-radius: 10px;
+    width: 440px;
+    height: 48px;
+    padding-left: 12px;
+    font-size: 20px;
+    color:  #D1D1D1;
+}
+.createTaskWindow textarea{
+    border: 2px solid #D1D1D1;
+    border-radius: 10px;
+    width: 440px;
+    height: 120px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 12px;
+
+    color:  #D1D1D1;
+}
+.radioButton{
+    width: 14px !important;
+    height: 20px !important;
+}
+.taskPrios{
+    display: flex;
+    align-items: center;
+}
+
+.addTask-button-window {
+    display: flex;
+    justify-content: end;
+}
