@@ -83,14 +83,6 @@ Die API-Endpunkte werden verwendet, um Benutzerdaten, Authentifizierungsinformat
 
 ---
 
-## ✅ To-Do / Geplante Features *(Falls gewünscht)*
-
-- [ ] Dark Mode-Integration
-- [ ] Mehrsprachigkeit (i18n)
-- [ ] Mobile-Optimierung
-
----
-
 
 ## 📩 Kontakt
 
