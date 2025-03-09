@@ -141,16 +141,57 @@ async function addContact() {
     let email = document.getElementById('mail').value;
     let phone = document.getElementById('phone').value;
     let newUser = new Contact(id = undefined, name, email, phone)
+    let response;
+    try {
+        response = await saveAccount(newUser)
+
+        if (!response.ok) {
+            throw new Error(`Serverantwort: ${response.status}`);
+        }
+
+
+    } catch (e) {
+        console.error("Fehler beim Speichern des Accounts:", e);
+        await showMistakes(response)
+        return;
+    }
 
     closeOverlay();
     setTimeout(() => {
         successOverlay();
     }, 100);
-    try { await saveAccount(newUser) } catch (e) { "Die Änderungen an join.accounts konnte nicht gespeichert werden: " + e } finally {
-        renderContacts();
-    }
+    renderContacts();
 }
+/**
+ * Processes an API response and marks invalid input fields in the DOM.
+ *
+ * This asynchronous function takes an HTTP response, extracts the JSON data,
+ * and checks for validation errors related to the phone number or email.
+ * If errors are found, the corresponding input fields are marked with the
+ * `'invalid'` class.
+ *
+ * @async
+ * @function showMistakes
+ * @param {Response} response - The HTTP response returned by the API.
+ * @returns {Promise<void>} Does not return a value but modifies the DOM by adding error indicators.
+ */
+async function showMistakes(response) {
+    let responseAsJson = await response.json()
+    console.log(responseAsJson);
+    if (responseAsJson.tel && responseAsJson.tel[0] === 'Enter a valid phone number.') {
+        const contactInputPhone = document.getElementById('contactInputPhone');
+        if (contactInputPhone) {
+            contactInputPhone.classList.add('invalid');
+        }
+    }
+    if (responseAsJson.email && responseAsJson.email[0] === 'contact with this email already exists.') {
+        const contactInputEmail = document.getElementById('contactInputEmail');
+        if (contactInputEmail) {
+            contactInputEmail.classList.add('invalid');
+        }
+    }
 
+}
 /**
  * Function for a edit contact to the accounts[] array
  * @param {string} i variable for the data in the accounts[] array

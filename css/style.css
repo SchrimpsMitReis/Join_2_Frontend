@@ -82,7 +82,9 @@ body {
 .btn-underlay:focus-within {
     border: 1px solid var(--lightblue);
 }
-
+.invalid{
+    border: 1px solid rgb(240, 24, 24) !important;
+}
 .frame-157 {
     border: none;
     width: 422px;

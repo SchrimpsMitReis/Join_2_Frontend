@@ -35,15 +35,16 @@ async function createTask(x) {
     const worker = readAssignedUsers();
     const desc = document.getElementById('boardTaskDescription').value;
     const date = document.getElementById('date').value;
-    const prio = prioTemp;
+    const prio = prioTemp || "medium";
     const category = document.getElementById('taskCategoryInput').value;
     const subTask = subtaskTemp;
     let newTask = new Task(id ,title, worker, desc, date, prio, category, subTask);
+    newTask.subtask_ids = subtaskIDsTemp
     newTask.switchStatus(x)
     let serializedTask = await serializeTask(newTask)
     
     try {
-        let response = await postTask(serializedTask)
+        await postTask(serializedTask)
     } catch (error) {
         
     }
@@ -51,7 +52,6 @@ async function createTask(x) {
     updateTask(newTask, x, title, worker, desc, date, prio, category, subTask);
     boardPage();
 }
-
 
 async function createTaskPage() {
     const id = undefined
@@ -64,13 +64,11 @@ async function createTaskPage() {
     const subTask = subtaskTemp;
     let newTask = new Task(id, title, worker, desc, date, prio, category, subTask, true);
     newTask.subtask_ids = subtaskIDsTemp
-    // sTIds = await saveAllSubtask()
     let serializedTask = await serializeTask(newTask)
     
     
-    // Join.tasks.push(serializedTask);
     try {
-        let response = await postTask(serializedTask)
+        await postTask(serializedTask)
         setTimeout(() => {
             successOverlayTask();
         }, 100);

@@ -60,15 +60,15 @@ class Contacts extends Page {
             <div class="overlay-right-container-addContact">
                 <div class="close-button">${this.closeButton()}</div>
                 <form class="addContact-form"  onsubmit="addContact(); return false">
-                    <div class="btn-underlay">
+                    <div id="contactInputName" class="btn-underlay">
                         <input id="name" required type="text" class="frame-157" placeholder="Name">
                         <img class="input-icon" src="./IMG/person.png"> 
                     </div>
-                    <div class="btn-underlay">
+                    <div id="contactInputEmail" class="btn-underlay">
                         <input id="mail" required type="email" class="frame-157" placeholder="Email">
                         <img class="input-icon" src="./IMG/mail.png"> 
                     </div>
-                    <div class="btn-underlay">
+                    <div id="contactInputPhone" class="btn-underlay">
                         <input id="phone" required type="number" class="frame-157" placeholder="Phone">
                         <img class="input-icon" src="./IMG/call.png"> 
                     </div>
