@@ -40,7 +40,7 @@ Bevor du das Projekt startest, stelle sicher, dass folgende Software installiert
 2. **Abhängigkeiten installieren**
 
    ```bash
-   npm install  # Falls du Yarn benutzt: yarn install
+   npm install 
    ```
 
 3. **Umgebungsvariablen setzen** *(Falls benötigt)*
@@ -64,10 +64,7 @@ Bevor du das Projekt startest, stelle sicher, dass folgende Software installiert
 ## 🏗 Technologie-Stack
 
 - **Frontend:** JavaScript, HTML, CSS
-- **Framework:** React *(Falls genutzt, sonst anpassen oder entfernen)*
-- **State-Management:** Redux *(Falls genutzt, sonst anpassen oder entfernen)*
 - **API-Kommunikation:** Fetch / Axios
-- **Styling:** TailwindCSS / Bootstrap / Material UI *(Falls genutzt, anpassen)*
 
 ---
 
